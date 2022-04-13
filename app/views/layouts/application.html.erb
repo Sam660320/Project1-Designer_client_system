@@ -10,6 +10,22 @@
   </head>
 
   <body>
+    <nav>
+      <%= link_to 'Home', root_path %>
+      <%= link_to "All Designers", designers_path%>
+      <%= link_to "All clients", clients_path%>
+      <%= link_to "All projects", projects_path%>
+      <% if @current_user.present?%>
+        <% if @current_user.admin?%>
+          <%= link_to "ALL users", users_path %>
+        <% end %>
+        <%= link_to "Designers", new_designer_path   %>
+        <%= link_to "Sign out #{ @current_user.email}", login_path, :method => 'delete'%>
+      <% else %>
+      <%= link_to "Sign up",  new_user_path %>
+      <%= link_to "Sign in", login_path%>
+      <% end %>
+    </nav>
     <%= yield %>
   </body>
 </html>

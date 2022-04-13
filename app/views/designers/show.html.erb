@@ -1,0 +1,19 @@
+<h1><%= @designer.name %></h1>
+ 
+<%= image_tag @designer.image, :class => 'feature' if @designer.image.present? %>
+<ul>
+    <li>Name: <%= @designer.name %></li>
+    <li>Date of Birth: <%= @designer.dob.strftime '%B %e, %Y' %></li>
+    <li>Emplyment Date: <%= @designer.hireyear %></li>
+    <li>phone: <%= @designer.phone %></li>
+    <li>email: <%= @designer.email %></li>
+    <li>Address: <%= @designer.address %></li>
+    <li>Award: <%= @designer.award %></li>
+</ul>
+
+
+
+<div class="controls">
+    <%= link_to "Edit designer", edit_designer_path(@designer)%>
+    <%= button_to "Delete designer", @designer, :method => 'delete', :data => { :confirm => "Are you sure?"} %>
+</div>

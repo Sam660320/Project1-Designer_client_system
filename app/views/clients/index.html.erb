@@ -1,0 +1,13 @@
+<h1>All Clients</h1>
+
+<% @clients.each do |client|%>
+    <%= image_tag client.image if client.image.present? %>
+        <ul>
+            <li>Name: <%= link_to client.name, client %></li>
+            <li>Phone: <%= client.phone %></li>
+            <li>Email: <%= client.email %> </li>
+            <li>Address: <%= client.address%></li>
+            <li>Heard us from: <%= client.heard_us_from %></li>
+            <li>Preferred style: <%= client.preferred_style %></li>
+        </ul>
+<% end %>

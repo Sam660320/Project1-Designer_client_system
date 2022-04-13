@@ -1,0 +1,18 @@
+<%= form_for @client do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name%>
+    <%= f.label :phone%>
+    <%= f.text_field :phone%>
+    <%= f.label :email%>
+    <%= f.text_field :email%>
+    <%= f.label :address%>
+    <%= f.text_field :address%>
+    <%= f.label :heard_us_from, 'Heard us from'%>
+    <%= f.text_field :heard_us_from %>
+    <%= f.label :preferred_style, 'Preferred Style' %>
+    <%= f.text_field :preferred_style %>
+    <%= f.label :image%>
+    <%= f.text_field :image%>
+
+    <%= f.submit%>
+<% end %>

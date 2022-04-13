@@ -1,0 +1,21 @@
+<h1><%= @project.name %></h1>
+ 
+<%= image_tag @project.image, :class => 'feature' if @project.image.present? %>
+<ul>
+    <li>Name: <%= @project.name %></li>
+    <li>Location: <%= @project.location %></li>
+    <li>Area: <%= @project.area %> sqm</li>
+    <% unless @project.start_date.nil? %>
+        <li>Start Date: <%= @project.start_date.strftime '%B %e, %Y' %></li>
+    <% end %>
+    <li>Style: <%= @project.style %></li>
+    <li>Estimate time of completion: <%= @project.estimate_time_finish %></li>
+    <li>Cost: <%= @project.cost %></li>
+</ul>
+
+
+
+<div class="controls">
+    <%= link_to "Edit project", edit_project_path(@project)%>
+    <%= button_to "Delete project", @project, :method => 'delete', :data => { :confirm => "Are you sure?"} %>
+</div>

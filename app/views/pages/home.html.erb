@@ -1,0 +1,7 @@
+<h1>Pages</h1>
+
+<p>
+   <% if @current_user.present?  %>
+    <h2>Welcome back <%= @current_user.email %>!</h2>
+    <% end %>
+</p>
