@@ -12,6 +12,12 @@ class DesignersController < ApplicationController
   def create
     designer = Designer.create designer_params
     @current_user.designer << designer
+    if params[:file].present?
+      req = Cloudinary::Uploader.upload(params[:file])
+      designer.image = req["public_id"]
+      designer.save
+    end
+
     redirect_to root_path
   end
 
@@ -22,6 +28,11 @@ class DesignersController < ApplicationController
   def update
     designer = Designer.find params[:id]
     designer.update designer_params
+    if params[:file].present?
+      req = Cloudinary::Uploader.upload(params[:file])
+      designer.image = req["public_id"]
+      designer.save
+    end
     redirect_to designer
   end
 
@@ -37,6 +48,6 @@ class DesignersController < ApplicationController
 
   private
   def designer_params 
-    params.require(:designer).permit(:name, :hireyear, :dob, :email, :phone, :address, :image, :award)
+    params.require(:designer).permit(:name, :hireyear, :dob, :email, :phone, :address, :award)
   end
 end
