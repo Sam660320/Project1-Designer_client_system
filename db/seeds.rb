@@ -28,8 +28,8 @@ puts "#{Designer.count} designers created."
 
 Project.destroy_all
 
-p1 = Project.create(:name => 'Stark Mansion', :location => 'Malibu', :area => '8600', :style => 'Advanced Modern & Elegant', :start_date => '2008-05-01', :finished => true, :estimate_time_finish => '2009', :image => 'https://static.wikia.nocookie.net/marvelmovies/images/7/7c/TonyStarkMantion-IM3.png/revision/latest/scale-to-width-down/700?cb=20131127033251', :cost => '13 million')
-p2 = Project.create(:name => '325 Toorak', :location =>'Melbourne', :area => '1130', :style => 'French', :start_date => '2020-02-21', :finished => false, :estimate_time_finish => '2022', :image => 'https://www.realestate.com.au/property-house-vic-toorak-138976299?sourcePage=rea%3Abuy%3Asrp-map&sourceElement=listing-tile', :cost => '1.3 million')
+p1 = Project.create(:name => 'Stark Mansion', :location => 'Malibu', :area => '8600', :style => 'Advanced Modern & Elegant', :start_date => '2008-05-01', :finished => true, :estimate_time_finish => '2009', :image => 'https://www.fancypantshomes.com/wp-content/uploads/2021/08/the-house-in-iron-man.jpg', :cost => '13 million')
+p2 = Project.create(:name => '325 Toorak', :location =>'Melbourne', :area => '1130', :style => 'French', :start_date => '2020-02-21', :finished => false, :estimate_time_finish => '2022', :image => 'https://i2.au.reastatic.net/1560x928-resize,extend,r=33,g=40,b=46/d5c9c180d15ab6a93a396a172b934e52fc62dda1501bb9adf41724a2aeff368d/image.jpg', :cost => '1.3 million')
 
 puts "#{Project.count} projects created."
 
