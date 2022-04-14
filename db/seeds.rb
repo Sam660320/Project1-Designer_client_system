@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
-u1 = User.create :email => 'johnsmith@gmail.com'
-u2 = User.create :email => 'sallygrey@gmail.com'
+u1 = User.create :email => 'johnsmith@gmail.com', :password => 'chicken'
+u2 = User.create :email => 'sallygrey@gmail.com', :password => 'chicken'
 puts "#{ User.count } users"
 
 
