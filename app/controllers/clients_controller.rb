@@ -38,3 +38,5 @@ class ClientsController < ApplicationController
     params.require(:client).permit(:name, :phone, :email, :address, :heard_us_from, :preferred_style, :image)
   end
 end
+
+
