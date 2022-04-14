@@ -4,28 +4,32 @@
     <title>Archdesign</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet", href= "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <nav>
-      <%= link_to 'Home', root_path %>
-      <%= link_to "All Designers", designers_path%>
-      <%= link_to "All clients", clients_path%>
-      <%= link_to "All projects", projects_path%>
-      <% if @current_user.present?%>
-        <% if @current_user.admin?%>
-          <%= link_to "ALL users", users_path %>
+    <header class="header">
+      <a href="#" class="logo"><img src="https://i.pinimg.com/564x/34/66/59/346659587dea10dc4b42a3d8d97b4df5.jpg" alt=" "></a>
+      <nav>
+        <%= link_to 'Home', root_path %>
+        <%= link_to "All Designers", designers_path%>
+        <%= link_to "All clients", clients_path%>
+        <%= link_to "All projects", projects_path%>
+        <% if @current_user.present?%>
+          <% if @current_user.admin?%>
+            <%= link_to "ALL users", users_path %>
+          <% end %>
+          <%= link_to "Designers", new_designer_path   %>
+          <%= link_to "Sign out #{ @current_user.email}", login_path, :method => 'delete'%>
+        <% else %>
+        <%= link_to "Sign up",  new_user_path %>
+        <%= link_to "Sign in", login_path%>
         <% end %>
-        <%= link_to "Designers", new_designer_path   %>
-        <%= link_to "Sign out #{ @current_user.email}", login_path, :method => 'delete'%>
-      <% else %>
-      <%= link_to "Sign up",  new_user_path %>
-      <%= link_to "Sign in", login_path%>
-      <% end %>
-    </nav>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
