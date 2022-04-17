@@ -15,6 +15,27 @@
  */
 
 
+#navibar {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    line-height: 1.4;
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+}
+#homepage {
+    line-height: 1.7;
+    color: rgb(247, 230, 245);
+    font-size: 1.5em;
+}
 img {
     max-width: 300px;
+}
+h1,h2,h3 {
+    color: #15e9b4;
+    font-family: 'Heebo', sans-serif;
+}
+.hero {
+    background-image: url('/assets/background/architecture_02.jpeg');
+    background-position: center;
+    background-size: cover;
+    
 }

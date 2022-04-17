@@ -1,7 +1,11 @@
-<h1>Pages</h1>
 
-<p>
-   <% if @current_user.present?  %>
-    <h2>Welcome back <%= @current_user.email %>!</h2>
-    <% end %>
-</p>
+<div class="hero vh-100 d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <h1 class="display-5">Your dream design starts here</h1><br>
+                <p id="homepage">Explore our magnificant projects <br> Meet our dedicated designers <br> And make your own dream come true</p> 
+                <%= link_to "Explore", projects_path, :class => "btn btn-primary"%> 
+        </div>
+    </div>
+</div>
