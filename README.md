@@ -1,10 +1,10 @@
 # Project 1 - A Designer Website using Ruby on Rails
 
-This project is built using Ruby on Rails. This project is building a website that simulates a real-world architectual company's website, which has a home page for the public, and a sign up/login system which enables company's employees to create, read, update, and delete information designers, clients, and projects from the databases. This project also utilizes HTML & CSS, Bootstrap, and Heroku platform for deployment. Project was created on Ruby version 2.7.5 and Rails version 5.2.7.
+This project is a website that simulates a real-world architectual company's website, which has a home page for the public, and a sign up/login system which enables company's employees to create, read, update, and delete information designers, clients, and projects from the databases. The project is built using Ruby on Rails, and it also utilizes HTML & CSS, Bootstrap, and Heroku platform for deployment. Project was created on Ruby version 2.7.5 and Rails version 5.2.7.
 
 Heroku link to access this website
 -------------------------------------------------------
-https://archdesign2022.herokuapp.com/
+https://archdesign2022.herokuapp.com/  (Not in use right now!)
 
 CRUD model
 -------------------------------------------------------
