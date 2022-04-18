@@ -4,7 +4,7 @@ This project is a website that simulates a real-world architectual company's web
 
 Heroku link to access this website
 -------------------------------------------------------
-https://archdesign2022.herokuapp.com/  (Not in use right now!)
+https://archdesign2022.herokuapp.com/  
 
 CRUD model
 -------------------------------------------------------
