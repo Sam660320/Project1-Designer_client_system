@@ -22,7 +22,7 @@ puts "#{Client.count} clients created."
 Designer.destroy_all
 
 d1 = Designer.create(:name => 'John Smith', :dob => '1974-02-03', :hireyear => '2003', :email => 'johnsmith@gmail.com', :phone => '0423 555 643', :address => '23 Bradley St, South Port', :image => '/assets/designers/d1.png', :award => 'Australia Good Design - 2009')
-d2 = Designer.create(:name => 'William Hugh', :dob => '1993-09-13', :hireyear => '2015', :email => 'william@gmail.com', :phone => '0466 041 698', :address => '3 Eughton Street, Portsea', :image => '/assets/designers/d3.webp', :award => 'Best portsea Designer - 2019')
+d2 = Designer.create(:name => 'William Hugh', :dob => '1993-09-13', :hireyear => '2015', :email => 'william@gmail.com', :phone => '0466 041 698', :address => '3 Eughton Street, Portsea', :image => '/assets/designers/d3.webp', :award => 'Best Portsea Designer - 2019')
 d3 = Designer.create(:name => 'Sally Grey', :dob => '1988-07-09', :hireyear => '2014', :email => 'sallygrey@gmail.com', :phone => '0433 928 456', :address => '183 St kilda Road, St kilda', :image => '/assets/designers/d4.webp', :award => 'Prospect young designer of 2015' )
 d4 = Designer.create(:name => 'Alex Jordan', :dob => '1974-01-15', :hireyear => '2008', :email => 'alexj@gmail.com', :phone => '0405 555 456', :address => '68 Sunberry St, Mountain Top', :image => '/assets/designers/d5.jpeg', :award => 'New South Wales Best Designer Of Yhe Uear - 2014')
 
