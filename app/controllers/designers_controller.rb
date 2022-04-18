@@ -4,7 +4,7 @@ class DesignersController < ApplicationController
   end
 
   def new
-      @designer = Designer.new
+    @designer = Designer.new
 
   end
 
