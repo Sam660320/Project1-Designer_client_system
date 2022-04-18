@@ -3,9 +3,114 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-7">
-                <h1 class="display-5">Your dream design starts here</h1><br>
+                <h1 class="display-5" id="slogan">Your dream design starts here</h1><br>
                 <p id="homepage">Explore our magnificant projects <br> Meet our dedicated designers <br> And make your own dream come true</p> 
                 <%= link_to "Explore", projects_path, :class => "btn btn-primary"%> 
+            </div>
         </div>
     </div>
 </div>
+<div id="preview">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center">
+            <h4 class="text-primary">Projects</h4>
+            <h1>Our Recent Design</h1>
+        </div>
+    </div><br>
+    <div class="row g-3">
+        <div class="col-lg-4 col-sm-3">
+            <div class="project">
+                <img src="/assets/projects/project01/p1.jpeg" alt="">
+                <div class= "overlay">
+                    <a href="/projects/6" class="link-primary">ss</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-3">
+            <div class="project">
+                <img src="/assets/projects/project02/p1.jpeg" alt="">
+                <div class= "overlay">
+                    <h4 class="text-white">Project title</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-3">
+            <div class="project">
+                <img src="/assets/projects/project03/p1.jpeg" alt="">
+                <div class= "overlay">
+                    <h4 class="text-white">Project title</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-3">
+            <div class="project">
+                <img src="/assets/projects/project04/p2.jpeg" alt="">
+                <div class= "overlay">
+                    <h4 class="text-white">Project title</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-3">
+            <div class="project">
+                <img src="/assets/projects/project05/p1.jpeg" alt="">
+                <div class= "overlay">
+                    <h4 class="text-white">Project title</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-3">
+            <div class="project">
+                <img src="/assets/projects/project06/p1.jpeg" alt="">
+                <div class= "overlay">
+                    <h4 class="text-white">Project title</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <section id="designer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center">
+                <h4 class="text-primary">Designers</h4>
+                <h1>Meet our designers</h1>
+                
+            </div>
+        </div><br>
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="desginer_pics">
+            <div class="col ">
+                <div class="card text-center offset-md-1" style="width: 20rem;">
+                    <img src="/assets/designers/d1.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">John Smith</h5>
+                        <p class="card-text">Australia Good Design - 2009</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card text-center offset-md-1" style="width: 20rem;">
+                    <img src="/assets/designers/d3.webp" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">William Hugh</h5>
+                        <p class="card-text">Best Portsea Designer - 2019</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card text-center offset-md-1" style="width: 20rem;">
+                    <img src="/assets/designers/d5.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Sally Grey</h5>
+                        <p class="card-text">Prospect Young Designer - 2015</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>

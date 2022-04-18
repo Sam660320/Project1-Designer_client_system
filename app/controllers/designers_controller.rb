@@ -1,5 +1,4 @@
 class DesignersController < ApplicationController
-  before_action :check_for_login
   def index
     @designers = Designer.all
   end

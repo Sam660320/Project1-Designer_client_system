@@ -1,4 +1,6 @@
 class ClientsController < ApplicationController
+  before_action :check_for_login
+
   def index
     @clients = Client.all
   end

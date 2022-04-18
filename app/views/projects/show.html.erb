@@ -1,21 +1,35 @@
-<h1><%= @project.name %></h1>
- 
-<%= image_tag @project.image, :class => 'feature' if @project.image.present? %>
-<ul>
-    <li>Name: <%= @project.name %></li>
-    <li>Location: <%= @project.location %></li>
-    <li>Area: <%= @project.area %> sqm</li>
-    <% unless @project.start_date.nil? %>
-        <li>Start Date: <%= @project.start_date.strftime '%B %e, %Y' %></li>
-    <% end %>
-    <li>Style: <%= @project.style %></li>
-    <li>Estimate time of completion: <%= @project.estimate_time_finish %></li>
-    <li>Cost: <%= @project.cost %></li>
-</ul>
+<div class="container">
+    <h1><%= @project.name %></h1>
+    <div class="row">
+        <div class="col">
+            <%= image_tag @project.image, :class => 'feature' if @project.image.present? %>
+        </div>
+        <div class="col">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-secondary">Name: <%= @project.name %></li>
+                <li class="list-group-item list-group-item-success">Location: <%= @project.location %></li>
+                <li class="list-group-item list-group-item-secondary"> Area: <%= @project.area %> sqm</li>
+                <% unless @project.start_date.nil? %>
+                    <li class="list-group-item list-group-item-success">Start Date: <%= @project.start_date.strftime '%B %e, %Y' %></li>
+                <% end %>
+                <li class="list-group-item list-group-item-secondary">Style: <%= @project.style %></li>
+                
+                <li class="list-group-item list-group-item-success">Cost: <%= @project.cost %></li>
+                <% unless @project.estimate_time_finish.nil? %>
+                    <li class="list-group-item list-group-item-secondary">Estimate time of completion: <%= @project.estimate_time_finish.strftime '%B %e, %Y' %></li>
+                <% end %>
+            </ul>
+            <br>
+            <div class="controls">
+                <%= link_to "Edit project", edit_project_path(@project), :class=>"btn btn-primary"%>
+                <br><br>
+                <%= button_to "Delete project", @project, :class=>"btn btn-danger", :method => 'delete', :data => { :confirm => "Are you sure?"} %>
+            </div>
+        </div>
+    </div>
 
 
 
-<div class="controls">
-    <%= link_to "Edit project", edit_project_path(@project)%>
-    <%= button_to "Delete project", @project, :method => 'delete', :data => { :confirm => "Are you sure?"} %>
+    
+
 </div>
