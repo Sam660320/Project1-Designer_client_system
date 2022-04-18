@@ -36,7 +36,6 @@
 img {
     width: 100%;
     max-width: 500px;
-    
 }
 .navbar-brand {
     max-width: 100px;
@@ -82,7 +81,6 @@ body {
 }
 .project:hover .overlay {
     opacity: 1;
-
 }
 .project:hover img {
     transform: scale(1.1)

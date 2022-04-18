@@ -12,6 +12,10 @@
                 <li class="list-group-item list-group-item-success">Address: <%= @client.address %></li>
                 <li class="list-group-item list-group-item-secondary">Heard us from: <%= @client.heard_us_from %></li>
                 <li class="list-group-item list-group-item-success">preferred_style: <%= @client.preferred_style %></li>
+                <li class="list-group-item list-group-item-secondary">Projects:  <% @client.projects.each do |project| %>
+                    <%= link_to project.name, project %>
+                    <% end %>
+                </li>
             </ul>
             <br>
 
