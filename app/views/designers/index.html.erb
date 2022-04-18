@@ -1,15 +1,14 @@
-<h1>All Designers</h1>
+<div class="container">
+    <h1>All Designers</h1><br>
+    <%= link_to "Create New Designer", new_designer_path%>
+    <br><br><br>
+    <% @designers.each do |designer|%>
+        <%= image_tag designer.image, :class=>"profileimg" if designer.image.present? %>
+            <ul>
+                <br>
+                <li>Name: <%= link_to designer.name, designer %></li>
+                <br>
 
-<% @designers.each do |designer|%>
-    <%= image_tag designer.image if designer.image.present? %>
-        <ul>
-            <li>Name: <%= link_to designer.name, designer %></li>
-            <li>Date of Birth: <%= designer.dob.strftime '%B %e, %Y' %></li>
-            <li>Emplyment Date: <%= designer.hireyear %></li>
-            <li>Phone: <%= designer.phone %></li>
-            <li>Email: <%= designer.email %> </li>
-            <li>Address: <%= designer.address%></li>
-            <li>Award: <%= designer.award %></li>
-
-        </ul>
-<% end %>
+            </ul>
+    <% end %>
+</div>

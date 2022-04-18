@@ -1,18 +1,18 @@
 <%= form_for @client do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name%>
-    <%= f.label :phone%>
-    <%= f.text_field :phone%>
-    <%= f.label :email%>
-    <%= f.text_field :email%>
-    <%= f.label :address%>
-    <%= f.text_field :address%>
-    <%= f.label :heard_us_from, 'Heard us from'%>
-    <%= f.text_field :heard_us_from %>
-    <%= f.label :preferred_style, 'Preferred Style' %>
-    <%= f.text_field :preferred_style %>
-    <%= f.label :image%>
-    <%= f.text_field :image%>
+    <%= f.label :name, :class=>'form-control-plaintext' %>
+    <%= f.text_field :name, :class => 'form-control'%>
+    <%= f.label :phone, :class=>'form-control-plaintext'%>
+    <%= f.text_field :phone, :class => 'form-control'%>
+    <%= f.label :email, :class=>'form-control-plaintext'%>
+    <%= f.text_field :email, :class => 'form-control'%>
+    <%= f.label :address, :class=>'form-control-plaintext'%>
+    <%= f.text_field :address, :class => 'form-control'%>
+    <%= f.label :heard_us_from, 'Heard us from', :class=>'form-control-plaintext'%>
+    <%= f.text_field :heard_us_from, :class => 'form-control' %>
+    <%= f.label :preferred_style, 'Preferred Style', :class=>'form-control-plaintext' %>
+    <%= f.text_field :preferred_style, :class => 'form-control' %>
+    <%= f.label :image, :class=>'form-control-plaintext'%>
+    <%= f.text_field :image, :class => 'form-control'%><br>
 
     <%= f.submit%>
 <% end %>

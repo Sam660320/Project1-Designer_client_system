@@ -24,6 +24,10 @@
 .container{
     margin-top: 100px;
 }
+.container-sm {
+    margin-top: 100px;
+    max-width: 600px;
+}
 #homepage {
     line-height: 1.7;
     color: rgb(247, 230, 245);
@@ -49,7 +53,7 @@ body {
 }
  
 #preview {
-    margin: 50px 150px 100px;
+    margin: 0 150px 100px;
 }
 .project {
     position: relative;
@@ -83,4 +87,11 @@ body {
 
 #designer {
     margin-top: 250px;
+}
+.profileimg {
+    max-width: 350px;
+}
+#contact {
+    margin-top: 300px;
+    margin-bottom: 200px;
 }

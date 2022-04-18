@@ -14,8 +14,10 @@ puts "#{ User.count } users"
 
 Client.destroy_all
 
-c1 = Client.create(:name => 'Iron Man', :phone => '0426 999 378', :email => 'ironman@gmail.com', :address => 'Cliffside Dr & Birdview Ave, Malibu, CA 90265', :heard_us_from => 'Friend recommendation', :preferred_style => 'Neofuturist', :image => 'https://i.pinimg.com/564x/db/38/29/db382916e20ffe546ff6e5ae6a1b0de0.jpg')
-c2 = Client.create(:name => 'Charles Windsor', :phone => '0422 333 132', :email => 'charles@gmail.com', :preferred_style => 'Neoclassical', :image => 'https://upload.wikimedia.org/wikipedia/commons/c/c7/Prince_Charles%2C_Duke_of_Cornwall_Allan_Warren.jpg')
+c1 = Client.create(:name => 'Iron Man', :phone => '0426 999 378', :email => 'ironman@gmail.com', :address => 'Cliffside Dr & Birdview Ave, Malibu, CA 90265', :heard_us_from => 'Friend recommendation', :preferred_style => 'Neofuturist', :image => '/assets/clients/c1.jpeg')
+c2 = Client.create(:name => 'Charles Windsor', :phone => '0422 333 132', :email => 'charles@gmail.com', :address => 'Westminster, London', :heard_us_from => 'Friend recommendation', :preferred_style => 'Neoclassical', :image => '/assets/clients/c2.jpeg')
+c3 = Client.create(:name => 'Mark Harris', :phone => '0492 743 292', :email => 'mharris@gmail.com', :address => '87 Waterview Ave, Southbank', :heard_us_from => 'Internet', :preferred_style => 'Mordern', :image => '/assets/clients/c3.jpeg')
+c4 = Client.create(:name => 'Oliver Kamp', :phone => '0458 751 732', :email => 'oliverk@gmail.com', :address => '192 Elizabeth St, Sunny Hill', :heard_us_from => 'Facebook', :preferred_style => 'Mordern', :image => '/assets/clients/c4.jpeg')
 
 puts "#{Client.count} clients created."
 
@@ -41,6 +43,10 @@ puts "#{Project.count} projects created."
 
 d1.projects << p1
 d2.projects << p2
+d3.projects << p3
+d4.projects << p4
 
 c1.projects << p1
 c2.projects << p2
+c3.projects << p3
+c4.projects << p4

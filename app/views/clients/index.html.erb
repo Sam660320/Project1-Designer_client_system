@@ -1,13 +1,13 @@
-<h1>All Clients</h1>
-
-<% @clients.each do |client|%>
-    <%= image_tag client.image if client.image.present? %>
-        <ul>
-            <li>Name: <%= link_to client.name, client %></li>
-            <li>Phone: <%= client.phone %></li>
-            <li>Email: <%= client.email %> </li>
-            <li>Address: <%= client.address%></li>
-            <li>Heard us from: <%= client.heard_us_from %></li>
-            <li>Preferred style: <%= client.preferred_style %></li>
-        </ul>   
-<% end %>
+<div class="container">
+    <h1>All Clients</h1><br>
+    <%= link_to "Create New client", new_client_path%>
+    <br><br><br>
+    <% @clients.each do |client|%>
+        <%= image_tag client.image, :class => "row g-3 col-lg-4" if client.image.present? %>
+            <ul>
+                <br>
+                <li>Name: <%= link_to client.name, client %></li>
+                <br>
+            </ul>   
+    <% end %>
+</div>

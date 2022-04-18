@@ -1,20 +1,20 @@
 <%= form_for @designer do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name%>
-    <%= f.label :dob, 'Date of birth'%>
-    <%= f.text_field :dob, :placeholder => 'YYYY-MM-DD'%>
-    <%= f.label :hireyear, 'Employment Date' %>
-    <%= f.text_field :hireyear %>
-    <%= f.label :email%>
-    <%= f.text_field :email%>
-    <%= f.label :phone%>
-    <%= f.text_field :phone%>
-    <%= f.label :address%>
-    <%= f.text_field :address%>
-    <%= f.label :award %>
-    <%= f.text_field :award %>
-    <%= f.label :image%>
-    <%= f.text_field :image%>
-
+    <%= f.label :name, :class=>'form-control-plaintext' %>
+    <%= f.text_field :name, :class => 'form-control'%>
+    <%= f.label :dob, 'Date of birth', :class=>'form-control-plaintext'%>
+    <%= f.text_field :dob, :placeholder => 'YYYY-MM-DD', :class => 'form-control'%>
+    <%= f.label :hireyear, 'Employment Date', :class=>'form-control-plaintext' %>
+    <%= f.text_field :hireyear, :class => 'form-control' %>
+    <%= f.label :email, :class=>'form-control-plaintext'%>
+    <%= f.text_field :email, :class => 'form-control'%>
+    <%= f.label :phone, :class=>'form-control-plaintext'%>
+    <%= f.text_field :phone, :class => 'form-control'%>
+    <%= f.label :address, :class=>'form-control-plaintext'%>
+    <%= f.text_field :address, :class => 'form-control'%>
+    <%= f.label :award, :class=>'form-control-plaintext' %>
+    <%= f.text_field :award, :class => 'form-control' %>
+    <%= f.label :image, :class=>'form-control-plaintext'%>
+    <%= f.text_field :image, :class => 'form-control'%>
+    <br>
     <%= f.submit%>
 <% end %>
