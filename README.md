@@ -6,6 +6,10 @@ Heroku link to access this website
 -------------------------------------------------------
 https://archdesign2022.herokuapp.com/  
 
+* User name for login: johnsmith@gmail.com
+* Password: chicken
+* Or you can choose to Sign up first and use your own user name and password.
+
 CRUD model
 -------------------------------------------------------
 The whole project is based on the CRUD (create, read, update, delete) model. Currently 4 models have been established in this project, which are
